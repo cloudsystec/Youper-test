@@ -1,0 +1,24 @@
+<ion-view title="" id="page1" style="background-color:#D6D6D6;" ng-init="_init()">
+
+  <ion-nav-buttons side="left">
+    
+    <div class="profileImage">
+      <a ng-click="changeProfileImage()">
+        <img ng-src="{{userData.avatarUrl}}" onerror="this.src = 'img/profile_placeholder.png'"/>
+      </a>
+    </div>
+
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+
+    <button ng-click="goToNotifications()" class="bell button button-icon icon ion-ios-bell">
+      <span class="badge badge-assertive header-badge" ng-show="hasNewNotifications()"></span>
+    </button>
+
+  </ion-nav-buttons>
+
+  <ion-content padding="true">
+  </ion-content>
+
+</ion-view>

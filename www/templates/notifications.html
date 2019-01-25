@@ -1,0 +1,17 @@
+<ion-view title="" id="page2" ng-init="_init()">
+  <ion-content padding="true" class="has-header">
+    <div class="list card" id="page2-card23" ng-repeat="item in notifications" ng-click="itemClick(item)">
+      <div class="item item-body" id="page2-list-item-container4">
+        <div id="page2-markdown4" class="show-list-numbers-and-dots">
+          <span class="badge badge-assertive list-badge" ng-show="item.isNew">1</span>
+          <p style="margin-top:0px;color:#000000;">
+            <strong>{{item.title}}</strong>
+          </p>
+          <p>
+            <div ng-bind-html="item.resume"></div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

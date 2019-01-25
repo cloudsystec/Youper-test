@@ -1,0 +1,43 @@
+.bell{
+	margin-top: 5px;
+}
+
+.list-badge{
+	top: -25px !important;
+	left: 90% !important;
+	width: 30px !important;
+	padding: 10px !important;
+	border: 3px solid white;
+	background: orange !important;
+	color: orange !important;
+}
+	
+.header-badge{
+	top: -35px !important;
+	left: 7px !important;
+
+	width: 18px !important;
+	padding:6px !important;
+	border: 3px solid white;
+	background:orange !important;
+  }
+
+.bar {
+	height: 60px !important;
+	&.buttons-right span{
+	margin-left: 15px !important;
+	}
+}
+	
+	.profileImage
+	{
+		max-width: 50px;
+		max-height: 50px;
+		border: 2px solid grey;
+		border-radius: 60%;
+		& img{
+			border-radius: 60%;
+			width: 100% !important;
+			height: 100% !important;
+		}
+	}

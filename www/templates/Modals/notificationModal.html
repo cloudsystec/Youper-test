@@ -1,0 +1,16 @@
+<ion-modal-view>
+    <ion-header-bar class="bar bar-header">
+        <h1 class="title">
+            {{selectedItem.title}}
+        </h1>
+        <button class="button" ng-click="modal.hide()">Close</button>
+    </ion-header-bar>
+    <ion-content class="padding">
+        <div class="padding">
+            <span>{{selectedItem.createdAt | date:'dd/MM/yyyy HH:mm'}}</span>
+        </div>
+        <div ng-bind-html="selectedItem.body">
+
+        </div>
+    </ion-content>
+</ion-modal-view>
